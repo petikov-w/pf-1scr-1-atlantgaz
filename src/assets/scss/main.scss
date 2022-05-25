@@ -23,6 +23,7 @@ body {
   font-family: $mainFont;
   font-size: $mainFontSize;
   font-weight: $mainFontWeight;
+  //color: $mainFontColor;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
@@ -104,7 +105,7 @@ section,
   flex: 0 0 auto;
   margin: 0 auto;
   width: 100%;
-  max-width: $lgDesktopWidth;
+  max-width: $blgDesktopWidth;
   @media screen and (max-width: $lgDesktopWidth) {
     padding: 0 16px;
   }
@@ -129,6 +130,18 @@ section,
     margin-right: auto;
   }
 }
+
+//======================================================
+//================== МИКСИНЫ ===========================
+//======================================================
+
+@mixin font($size, $weight, $line-height, $color: $main_color) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+  color: $color;
+}
+
 
 @import './common/_common';
 

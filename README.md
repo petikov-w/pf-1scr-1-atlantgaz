@@ -1,4 +1,4 @@
-# cli-pug-template
+# atlantgaz-1scr-1
 
 ## Project setup
 ```

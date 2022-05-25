@@ -1,11 +1,11 @@
 export const site = {
-    title: "Курс по Vue 3",
+    title: "Proxima",
 };
 
 export const contentHeader = {
     listItemHeader: {
         logo: require('@/assets/images/logo_proxima.png'),
-        telefon: "84958773292",
+        telefon: "74958773292",
         subtitle: "Срочный вопрос"
     }
 }
