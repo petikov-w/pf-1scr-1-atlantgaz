@@ -22,6 +22,7 @@ export default {
   width: 1100px;
   margin: 0 auto;
   display: flex;
+  margin-top: -50px;
   span {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;

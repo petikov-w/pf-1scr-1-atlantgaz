@@ -1,6 +1,8 @@
-// тк мы к ним обращаемся везде ниже
 @import 'utils/vars';
 @import 'utils/reset';
+@import 'common/common';
+@import './common/_common.scss';
+//@import '@/assets/scss/common/_common.scss';
 
 html {
   line-height: $mainLineHeight;
@@ -74,30 +76,30 @@ footer, // also footer if footer without section
 section,
 .section {
   position: relative;
-  padding: 40px 0;
-  @media screen and (max-width: $desktopWidth) {
-    padding: 36px 0;
-  }
-  @media screen and (max-width: $desktopWidth) {
-    padding: 28px 0;
-  }
-  @media screen and (max-width: $desktopWidth) {
-    padding: 20px 0;
-  }
+  //padding: 40px 0;
+  //@media screen and (max-width: $desktopWidth) {
+  //  padding: 36px 0;
+  //}
+  //@media screen and (max-width: $desktopWidth) {
+  //  padding: 28px 0;
+  //}
+  //@media screen and (max-width: $desktopWidth) {
+  //  padding: 20px 0;
+  //}
 }
 
 .wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  //display: flex;
+  //flex-direction: column;
+  //min-height: 100vh;
   margin: 0 auto;
 }
 
 .wrapper-content {
-  display: flex;
-  flex-direction: column;
-  min-height: 70vh;
-  margin-top: 80px; // if header is fixed do mt: headerHeight
+  //display: flex;
+  //flex-direction: column;
+  //min-height: 70vh;
+  //margin-top: 80px; // if header is fixed do mt: headerHeight
 }
 
 .container {
@@ -131,17 +133,6 @@ section,
   }
 }
 
-//======================================================
-//================== МИКСИНЫ ===========================
-//======================================================
-
-@mixin font($size, $weight, $line-height, $color: $main_color) {
-  font-size: $size;
-  font-weight: $weight;
-  line-height: $line-height;
-  color: $color;
-}
 
 
-@import './common/_common';
 

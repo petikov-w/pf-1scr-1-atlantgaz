@@ -6,7 +6,6 @@
       span {{ link_hot_question }}
 
       //router-link(class="navbar-logo" to="/")
-
 </template>
 
 <script>
