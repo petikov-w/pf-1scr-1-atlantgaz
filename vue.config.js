@@ -1,19 +1,11 @@
-const { defineConfig } = require('@vue/cli-service')
+const { defineConfig } = require('@vue/cli-service');
+const path = require('path');
+
 module.exports = defineConfig({
   transpileDependencies: true,
   productionSourceMap: false,
   assetsDir: "assets"
 })
-
-module.exports =  {
-  css: {
-    loaderOptions: {
-      sass: {
-        additionalData: '@import "@/assets/scss/main.scss";'
-      }
-    }
-  }
-};
 
 module.exports = {
   configureWebpack: {
@@ -36,3 +28,21 @@ module.exports = {
   }
 }
 
+
+module.exports = {
+  chainWebpack: config => {
+    const oneOfsMap = config.module.rule('scss').oneOfs.store
+    oneOfsMap.forEach(item => {
+      item
+          .use('sass-resources-loader')
+          .loader('sass-resources-loader')
+          .options({
+            resources: [
+              path.resolve(__dirname, './src/assets/scss/vars.scss'),
+              path.resolve(__dirname, './src/assets/scss/mixin.scss'),
+            ]
+          })
+          .end()
+    })
+  }
+}

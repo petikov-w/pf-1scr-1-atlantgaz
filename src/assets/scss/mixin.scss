@@ -1,0 +1,10 @@
+@mixin set-font($size, $weight, $line-height, $color: $mainFontColor) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $line-height;
+    color: $color;
+}
+
+@mixin sets($color) {
+    color: $color;
+}

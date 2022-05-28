@@ -24,15 +24,13 @@ export default {
   components: {Services},
   setup() {
     const listServices = contentServices
-    const isEven = number => number % 2 === 0 ? true : false
+    const isEven = number => number % 2 === 0
     return {listServices, isEven}
   }
 }
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/scss/common/_common.scss';
-
 .wrapper-home {
   width: 1100px;
   margin: 0 auto;
@@ -77,12 +75,6 @@ export default {
     margin-left: -100px;
     .title {
       @include set-font(24px, 400, 29px, #ffffff);
-      //font-size: 24px;
-      //font-weight: 400;
-      //line-height: 29px;
-      //color: #ffffff;
-      //@include sets()
-      //margin-bottom: 15px;
     }
     img {
       text-align: left;
